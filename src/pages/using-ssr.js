@@ -14,7 +14,7 @@ const UsingSSR = ({ serverData }) => {
         alt="A random dog"
         src={serverData.message}
       />
-      <p>Welcome to a server side rendered page with a random dog photo</p>
+      <p>Welcome to Saad side rendered page with a random dog photo</p>
       <p>
         To learn more, head over to our{" "}
         <a href="https://www.gatsbyjs.com/docs/reference/rendering-options/server-side-rendering/">
