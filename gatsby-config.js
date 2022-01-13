@@ -52,19 +52,7 @@ module.exports = {
             /* ... */
           };
         },
-        // optional, to resolve a single entry to multiple, for e.g in localization
-        resolveDynamicEntries: async (entries) => {
-          const entriesToBuild = []
-          for entry of entries {
-            if (entry.data.myprop.isDynamic){
-               entriesToBuild.push(await myEntryResolver(entry))
-            }
-            else {
-               entriesToBuild.push(entry)
-            }
-          }
-          return entriesToBuild;
-        },
+
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
